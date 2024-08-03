@@ -9,7 +9,7 @@ __version__ = "0.0.0"
 REPO_NAME = "end-to-end-classification"
 AUTHOR_USER_NAME = "mohit-awana"
 SRC_REPO = "CNNClassifier"
-AUTHOR_EMAIL = "mohilt.awana3128@gmail.com"
+AUTHOR_EMAIL = "mohit.awana3128@gmail.com"
 
 
 setuptools.setup(
