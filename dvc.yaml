@@ -10,7 +10,7 @@ stages:
   prepare_base_model:
     cmd: PYTHONPATH=./src python3 src/CNNClassifier/pipeline/stage_02_prepare_base_mode.py
     deps:
-      - src/CNNClassifier/pipeline/stage_02_prepare_base_model.py
+      - src/CNNClassifier/pipeline/stage_02_prepare_base_mode.py
       - config/config.yaml
     params:
       - IMAGE_SIZE

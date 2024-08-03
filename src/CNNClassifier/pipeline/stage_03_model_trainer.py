@@ -5,9 +5,9 @@ project_dir = '/Users/mo/Downloads/workspace/end-to-end-classification/'
 
 sys.path.append(os.path.abspath(os.path.join(project_dir, 'src')))
 
-from src.CNNClassifier.config.configuration import ConfigurationManager
-from src.CNNClassifier.components.model_trainer import Training
-from src.CNNClassifier import logger
+from CNNClassifier.config.configuration import ConfigurationManager
+from CNNClassifier.components.model_trainer import Training
+from CNNClassifier import logger
 
 STAGE_NAME = "Training"
 
