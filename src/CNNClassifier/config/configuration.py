@@ -1,8 +1,13 @@
 import os
+import sys
 
-from src.CNNClassifier.constants import *
-from src.CNNClassifier.utils.common import read_yaml, create_directories, save_json
-from src.CNNClassifier.entity.conifg_entity import (DataIngestionConfig, PrepareBaseModelConfig,TrainingConfig, EvaluationConfig)
+project_dir = '/Users/mo/Downloads/workspace/end-to-end-classification/'
+
+sys.path.append(os.path.abspath(os.path.join(project_dir, 'src')))
+
+from CNNClassifier.constants import *
+from CNNClassifier.utils.common import read_yaml, create_directories, save_json
+from CNNClassifier.entity.conifg_entity import (DataIngestionConfig, PrepareBaseModelConfig,TrainingConfig, EvaluationConfig)
 
 
 class ConfigurationManager:

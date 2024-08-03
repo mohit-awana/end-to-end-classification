@@ -1,10 +1,16 @@
 import os
+import sys
 
+project_dir = '/Users/mo/Downloads/workspace/end-to-end-classification/'
+
+sys.path.append(os.path.abspath(os.path.join(project_dir, 'src')))
+
+import os
 import urllib.request as request
 from zipfile import ZipFile
 import tensorflow as tf
 import time
-from src.CNNClassifier.config.configuration import TrainingConfig
+from CNNClassifier.config.configuration import TrainingConfig
 from pathlib import Path
 
 

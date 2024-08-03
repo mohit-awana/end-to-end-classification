@@ -1,9 +1,16 @@
+import sys
+import os
+
+project_dir = '/Users/mo/Downloads/workspace/end-to-end-classification/'
+
+sys.path.append(os.path.abspath(os.path.join(project_dir, 'src')))
+
 import os
 import zipfile
 import gdown
-from src.CNNClassifier import logger
-from src.CNNClassifier.utils.common import get_size
-from src.CNNClassifier.entity.conifg_entity import DataIngestionConfig
+from CNNClassifier import logger
+from CNNClassifier.utils.common import get_size
+from CNNClassifier.entity.conifg_entity import DataIngestionConfig
 
 class DataIngestion:
     def __init__(self, config: DataIngestionConfig):

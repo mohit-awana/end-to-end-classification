@@ -1,6 +1,13 @@
-from src.CNNClassifier.config.configuration import ConfigurationManager
-from src.CNNClassifier.components.data_ingestion import DataIngestion
-from src.CNNClassifier import logger
+import os
+import sys
+
+project_dir = '/Users/mo/Downloads/workspace/end-to-end-classification/'
+
+sys.path.append(os.path.abspath(os.path.join(project_dir, 'src')))
+
+from CNNClassifier.config.configuration import ConfigurationManager
+from CNNClassifier.components.data_ingestion import DataIngestion
+from CNNClassifier import logger
 
 
 STAGE_NAME = "Date Ingestion Stage"
@@ -22,7 +29,7 @@ if __name__ == '__main__':
         logger.info(f">>>>>Stage {STAGE_NAME} started <<<<")
         obj = DataIngestionTrainingPipeline()
         obj.main()
-        logger.INFO(f">>>> stage {STAGE_NAME} completed <<<<\n\nx====")
+        logger.info(f">>>> stage {STAGE_NAME} completed <<<<\n\nx====")
     except Exception as e:
         logger.exception(e)
         raise e

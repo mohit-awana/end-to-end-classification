@@ -1,6 +1,13 @@
-from src.CNNClassifier.config.configuration import ConfigurationManager
-from src.CNNClassifier.components.model_evaluation_mlflow import Evaluation
-from src.CNNClassifier import logger
+import os
+import sys
+
+project_dir = '/Users/mo/Downloads/workspace/end-to-end-classification/'
+
+sys.path.append(os.path.abspath(os.path.join(project_dir, 'src')))
+
+from CNNClassifier.config.configuration import ConfigurationManager
+from CNNClassifier.components.model_evaluation_mlflow import Evaluation
+from CNNClassifier import logger
 
 STAGE_NAME = "Evaluation stage"
 

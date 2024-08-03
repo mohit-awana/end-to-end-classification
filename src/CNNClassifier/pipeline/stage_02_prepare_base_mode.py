@@ -1,6 +1,13 @@
-from src.CNNClassifier.config.configuration import ConfigurationManager
-from src.CNNClassifier.components.prepare_base_model import PrepareBaseModel
-from src.CNNClassifier import logger
+import os
+import sys
+
+project_dir = '/Users/mo/Downloads/workspace/end-to-end-classification/'
+
+sys.path.append(os.path.abspath(os.path.join(project_dir, 'src')))
+
+from CNNClassifier.config.configuration import ConfigurationManager
+from CNNClassifier.components.prepare_base_model import PrepareBaseModel
+from CNNClassifier import logger
 
 STAGE_NAME = "Prepare Base Model"
 

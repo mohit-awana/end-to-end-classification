@@ -1,8 +1,14 @@
+import os
+import sys
+
+project_dir = '/Users/mo/Downloads/workspace/end-to-end-classification/'
+
+sys.path.append(os.path.abspath(os.path.join(project_dir, 'src')))
 
 import os
 from box.exceptions import BoxValueError
 import yaml
-from src.CNNClassifier import logger
+from CNNClassifier import logger
 import json
 import joblib
 

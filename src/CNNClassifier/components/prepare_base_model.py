@@ -1,10 +1,17 @@
 import os
+import sys
+
+project_dir = '/Users/mo/Downloads/workspace/end-to-end-classification/'
+
+sys.path.append(os.path.abspath(os.path.join(project_dir, 'src')))
+
+import os
 import urllib.request as request
 from zipfile import ZipFile
 import tensorflow as tf
 from pathlib import Path
 
-from src.CNNClassifier.entity.conifg_entity import PrepareBaseModelConfig
+from CNNClassifier.entity.conifg_entity import PrepareBaseModelConfig
 
 
 class PrepareBaseModel:

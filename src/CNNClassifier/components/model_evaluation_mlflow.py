@@ -1,10 +1,16 @@
+import os
+import sys
+project_dir = '/Users/mo/Downloads/workspace/end-to-end-classification/'
+
+sys.path.append(os.path.abspath(os.path.join(project_dir, 'src')))
+
 import tensorflow as tf
 from pathlib import Path
 import mlflow
 import mlflow.keras
 from urllib.parse import urlparse
-from src.CNNClassifier.config.configuration import EvaluationConfig
-from src.CNNClassifier.utils.common  import read_yaml, create_directories, save_json
+from CNNClassifier.config.configuration import EvaluationConfig
+from CNNClassifier.utils.common  import read_yaml, create_directories, save_json
 
 
 class Evaluation:
